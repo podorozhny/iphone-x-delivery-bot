@@ -6,3 +6,5 @@ services:
             context: ./
             dockerfile: ./docker/Dockerfile
         tty: true
+        volumes:
+            - ./var:/app/var
