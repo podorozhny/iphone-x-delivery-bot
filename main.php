@@ -5,8 +5,8 @@ const DATA_FILENAME     = __DIR__ . '/var/data';
 const TG_TOKEN_FILENAME = __DIR__ . '/telegram_token.txt';
 
 const  CHATS = [
-    9955337 => 'vanya_1s',
-    //    10416247 => 'dmitrov',
+    9955337  => 'vanya_1s',
+    10416247 => 'dmitrov',
 ];
 
 function deep_ksort($input)
@@ -70,9 +70,6 @@ foreach ($deliveryMessage as $model => $value) {
 $text = "Что-то обновилось на сайте:\n\n" . implode("\n\n", $text) . "\n";
 
 $prevResponseHash = @file_get_contents(HASH_FILENAME);
-
-var_dump($responseHash);
-var_dump($prevResponseHash);
 
 if ($responseHash === $prevResponseHash) {
     echo 'Ничего не изменилось.' . "\n";
