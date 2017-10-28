@@ -1,0 +1,17 @@
+{
+    "name":              "podorozhny/iphone-x-delivery-bot",
+    "type":              "project",
+    "description":       "Apple iPhone X delivery message telegram bot",
+    "license":           "proprietary",
+    "authors":           [
+        {
+            "name":  "Ivan Podorozhny",
+            "email": "ivan@podorozhny.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require":           {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
